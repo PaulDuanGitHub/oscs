@@ -2774,7 +2774,7 @@ function webViewerInitialized() {
   const params = (0, _ui_utils.parseQueryString)(queryString);
   // Modify here
   var fileName = params.get("file") ?? _app_options.AppOptions.get("defaultUrl");
-  var fileURL = `https://api.xianzhaoduan.com/oscs/getPDF?file=${fileName}`;
+  var fileURL = `https://github.com/mac-egirls/oscs/releases/download/latest/${fileName}`;
   file = fileURL;
   validateFileURL(file);
   const fileInput = appConfig.openFileInput;
